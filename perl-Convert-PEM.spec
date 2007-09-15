@@ -2,7 +2,7 @@
 
 Name:		perl-%module
 Version:	0.07
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Read/write encrypted ASN.1 PEM files
