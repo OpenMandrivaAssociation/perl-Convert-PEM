@@ -8,7 +8,6 @@ Group:		Development/Perl
 Summary:	Read/write encrypted ASN.1 PEM files
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Convert/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%module/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 BuildRequires:	perl-Convert-ASN1 
 BuildRequires:  perl-Class-ErrorHandler
