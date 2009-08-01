@@ -1,22 +1,24 @@
-%define		module Convert-PEM
+%define	upstream_name    Convert-PEM
+%define	upstream_version 0.07
 
-Name:		perl-%module
-Version:	0.07
-Release:	%mkrel 5
-License:	GPL or Artistic
-Group:		Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Read/write encrypted ASN.1 PEM files
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Convert/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%module/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-Convert-ASN1 
 BuildRequires:  perl-Class-ErrorHandler
 BuildRequires:  perl-Crypt-DES_EDE3
+BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 # not found automatically
 Requires:	perl(Class::ErrorHandler)
 Requires:	perl
-BuildArch:	noarch
 
 %description
 Convert::PEM reads and writes PEM files containing ASN.1-encoded
@@ -24,7 +26,7 @@ objects. The files can optionally be encrypted using a symmetric cipher
 algorithm, such as 3DES.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -45,4 +47,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Changes
 %{perl_vendorlib}/*
 %{_mandir}/*/*
-
