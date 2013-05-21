@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	7
+Release:	8
 
 Summary:	Read/write encrypted ASN.1 PEM files
 License:	GPL+ or Artistic
