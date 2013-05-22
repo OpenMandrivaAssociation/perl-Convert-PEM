@@ -11,7 +11,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.bz2
 
-BuildRequires:	perl-Convert-ASN1 
+BuildRequires:	perl(Convert::ASN1) 
 BuildRequires:	perl-Class-ErrorHandler
 BuildRequires:	perl-Crypt-DES_EDE3
 BuildRequires:	perl-devel
