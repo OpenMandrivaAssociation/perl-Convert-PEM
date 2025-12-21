@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Convert/%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Convert::ASN1) 
 BuildRequires:	perl-Class-ErrorHandler
