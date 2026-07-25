@@ -1,14 +1,14 @@
 %define	modname	Convert-PEM
-%define	modver	0.08
+%define	modver	0.13
 
 Summary:	Read/write encrypted ASN.1 PEM files
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	18
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Convert/%{modname}-%{modver}.tar.bz2
+Url:		https://github.com/perl-Crypt-OpenPGP/Convert-PEM
+Source0:	https://cpan.metacpan.org/authors/id/T/TI/TIMLEGGE/Convert-PEM-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
